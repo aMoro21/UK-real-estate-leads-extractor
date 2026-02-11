@@ -12,10 +12,13 @@ Unlike basic scrapers, this tool includes a **Data Integrity Layer**. It doesn't
 * **Multi-Format Export:** Generates both `CSV` for raw database imports and `XLSX` (Excel) for client-ready viewing.
 
 ## 📂 Project Structure
-* `main.py`: The central execution script and workflow controller.
-* `AgenciesDatasExtractor.py`: The core scraping logic and HTML parsing engine.
-* `helper_functions.py`: Utility functions for data cleaning and formatting.
-* `UK_RealEstate_leads_data_sample.xlsx`: A verified sample of 480+ extracted leads.
+* **`main.py`**: The central orchestrator. It manages the end-to-end workflow, from link discovery to final file export.
+* **`AgencyLinksExtractor.py`**: The "Scout" module. Handles pagination and high-level directory navigation to gather target URLs.
+* **`AgenciesDatasExtractor.py`**: The "Harvester" module. Performs deep-page parsing to extract granular agency details.
+* **`AgencyStructure.py`**: The "Architect." Defines the data models and ensures the extracted data follows a consistent schema.
+* **`helper_functions.py`**: The "Toolbox." Contains reusable logic for data cleaning, logging, and error management.
+* **`requirements.txt`**: The "Manifest." Lists all dependencies required to build the environment.
+* **`UK_RealEstate_leads_data_sample.xlsx`**: The "Proof." A verified export of the engine's output.
 
 ## 🚀 Quick Start
 
