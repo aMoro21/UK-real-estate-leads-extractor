@@ -1,0 +1,21 @@
+# Python Environment
+venv/
+env/
+.env
+
+# Python Cache (Speeds up execution, but junk for GitHub)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE Settings (Specific to your computer)
+.vscode/
+.idea/
+
+# Scraper Logs & Temporary Files
+*.log
+.DS_Store
+
+# Data Files (OPTIONAL)
+# If you decide to hide your data later, uncomment the lines below:
+ *.csv
